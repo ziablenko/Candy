@@ -1,4 +1,6 @@
-package org.example;
+package Candies;
+
+import Candies.Candy;
 
 public class Сookies extends Candy {
 

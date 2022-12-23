@@ -1,4 +1,4 @@
-package org.example;
+package Candies;
 
 public class LolliPops extends Candy {
 

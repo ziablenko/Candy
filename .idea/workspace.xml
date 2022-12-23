@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="Deleting comment.">
+    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="Changing variable names.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Candy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ChocolateBars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ChocolateBars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LolliPops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LolliPops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Сookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Сookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Candies/Candy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ChocolateBars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Candies/ChocolateBars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LolliPops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Candies/LolliPops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Present/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Сookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Candies/Сookies.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671816953287</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changing variable names.">
+      <created>1671818012548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671818012548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create" />
     <MESSAGE value="Deleting comment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleting comment." />
+    <MESSAGE value="Changing variable names." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing variable names." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
