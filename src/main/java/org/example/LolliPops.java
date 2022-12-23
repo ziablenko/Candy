@@ -4,12 +4,12 @@ public class LolliPops extends Candy {
 
         String taste= "Клубничный";
 
-    public LolliPops(String n,String t,int p, int w, String ta){ //создаем конструктор со всеми параметрами (наименование и вес(шт))
-            super.name=n;
-            super.weight=w;
-            super.type=t;
-            super.price=p;
-            taste=ta;
+    public LolliPops(String name,String type,int price, int weight, String taste){ //создаем конструктор со всеми параметрами (наименование и вес(шт))
+            super.name=name;
+            super.weight=weight;
+            super.type=type;
+            super.price=price;
+            this.taste=taste;
 
         };
 }

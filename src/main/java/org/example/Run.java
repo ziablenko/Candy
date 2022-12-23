@@ -8,12 +8,18 @@ public class Run {
         {
             ArrayList<Candy> present = new ArrayList<>();
 
-            ChocolateBars test0 = new ChocolateBars("Марс        ", "Шоколадный батончик", 25, 33, "Орехи");
-            ChocolateBars test1 = new ChocolateBars("Сникерс     ", "Шоколадный батончик", 39, 40, "Нуга");
-            LolliPops test2 = new LolliPops("Хуба-буба   ", "Леденцы            ", 24, 30, "Малиновый");
-            LolliPops test3 = new LolliPops("Чупа-Чупс   ", "Леденцы            ", 31, 31, "Кока-кола");
-            Сookies test4 = new Сookies("Орео        ", "печенье            ", 14, 33, "Шоколадное");
-            Сookies test5 = new Сookies("Звезда      ", "печенье            ", 12, 29, "Имбирное");
+            ChocolateBars test0 = new ChocolateBars("Марс        ", "Шоколадный батончик",
+                                                25, 33, "Орехи");
+            ChocolateBars test1 = new ChocolateBars("Сникерс     ", "Шоколадный батончик",
+                                                39, 40, "Нуга");
+            LolliPops test2 = new LolliPops("Хуба-буба   ", "Леденцы            ",
+                                        24, 30, "Малиновый");
+            LolliPops test3 = new LolliPops("Чупа-Чупс   ", "Леденцы            ",
+                                        31, 31, "Кока-кола");
+            Сookies test4 = new Сookies("Орео        ", "печенье            ",
+                                    14, 33, "Шоколадное");
+            Сookies test5 = new Сookies("Звезда      ", "печенье            ",
+                                    12, 29, "Имбирное");
 
             present.add(test0);
             present.add(test1);

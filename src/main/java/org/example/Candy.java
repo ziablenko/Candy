@@ -13,15 +13,15 @@ public class Candy {
         weight=0;
     }
 
-    public Candy(String n,String t,int p, int w){ //создаем конструктор со всеми параметрами (наименование и вес(шт))
-        name=n;
-        weight=w;
-        type=t;
-        price=p;
+    public Candy(String name,String type,int price, int weight){
+        this.name=name;
+        this.weight=weight;
+        this.type=type;
+        this.price=price;
     };
 
-    public void show_all_info1(String n) { // создаем метод который выводит всю информацию таблично
-        name=n;
+    public void show_all_info1(String name) {
+        this.name=name;
         System.out.println("| "+name+" | "+type+" | "+price+" | "+weight+" | ");
     }
 
