@@ -1,19 +1,19 @@
-package Present;
+package present;
 
-import Candies.Candy;
-import Candies.ChocolateBars;
-import Candies.LolliPops;
-import Candies.Сookies;
+import candies.Candies;
+import candies.ChocolateBar;
+import candies.Lollipops;
+import candies.Сookies;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class CreatePresent implements Box {
+public class PresentHandler implements Box {
 
     public static void createBoxPresent() {
 
-        CreatePresent gift = new CreatePresent();
-        ArrayList<Candy> present = gift.createPresent();
+        PresentHandler gift = new PresentHandler();
+        ArrayList<Candies> present = createPresent();
         gift.sort(present);
         gift.presentPrice(present);
         gift.presentWeight(present);
@@ -21,21 +21,21 @@ public class CreatePresent implements Box {
 
     }
 
-    public static ArrayList<Candy> createPresent() {
-        ArrayList<Candy> present = new ArrayList<>();
+    public static ArrayList<Candies> createPresent() {
+        ArrayList<Candies> present = new ArrayList<>();
 
-        ChocolateBars test0 = new ChocolateBars("Марс        ", "Шоколадный батончик",
-                25, 33, "Орехи");
-        ChocolateBars test1 = new ChocolateBars("Сникерс     ", "Шоколадный батончик",
-                39, 40, "Нуга");
-        LolliPops test2 = new LolliPops("Хуба-буба   ", "Леденцы            ",
-                24, 30, "Малиновый");
-        LolliPops test3 = new LolliPops("Чупа-Чупс   ", "Леденцы            ",
-                31, 31, "Кока-кола");
+        ChocolateBar test0 = new ChocolateBar("Марс        ", "Шоколадный батончик",
+                25, 33);
+        ChocolateBar test1 = new ChocolateBar("Сникерс     ", "Шоколадный батончик",
+                39, 40);
+        Lollipops test2 = new Lollipops("Хуба-буба   ", "Леденцы            ",
+                24, 30);
+        Lollipops test3 = new Lollipops("Чупа-Чупс   ", "Леденцы            ",
+                31, 31);
         Сookies test4 = new Сookies("Орео        ", "печенье            ",
-                14, 33, "Шоколадное");
+                14, 33);
         Сookies test5 = new Сookies("Звезда      ", "печенье            ",
-                12, 29, "Имбирное");
+                12, 29);
 
         present.add(test0);
         present.add(test1);
@@ -48,47 +48,47 @@ public class CreatePresent implements Box {
         System.out.println("| Наименование | Тип                 |Цена|Вес |");
         System.out.println("|--------------|---------------------|----|----|");
 
-        for (Candy candy : present) {
+        for (Candies candy : present) {
             candy.show_all_info1(candy.name);
         }
         return present;
     }
 
-    public void sort(ArrayList<Candy> present) {
+    public void sort(ArrayList<Candies> present) {
 
-        present.sort(Comparator.comparing(Candy::getName)
-                .thenComparing(Candy::getWeight));
+        present.sort(Comparator.comparing(Candies::getName)
+                .thenComparing(Candies::getWeight));
         System.out.println("Подарочный набор отсортирован: ");
         System.out.println("| Наименование | Тип                 |Цена|Вес |");
         System.out.println("|--------------|---------------------|----|----|");
 
-        for (Candy candy : present) {
+        for (Candies candy : present) {
             candy.show_all_info1(candy.name);
         }
     }
 
     @Override
-    public void presentPrice(ArrayList<Candy> present) {
+    public void presentPrice(ArrayList<Candies> present) {
         int sum = 0;
-        for (Candy candy : present) {
+        for (Candies candy : present) {
             sum += candy.getPrice();
         }
         System.out.println("Цена подарка: " + sum);
     }
 
     @Override
-    public void presentWeight(ArrayList<Candy> present) {
+    public void presentWeight(ArrayList<Candies> present) {
         int sum = 0;
-        for (Candy candy : present) {
+        for (Candies candy : present) {
             sum += candy.getWeight();
         }
         System.out.println("Вес подарка: " + sum);
     }
 
     @Override
-    public void searchCandy(ArrayList<Candy> present) {
+    public void searchCandy(ArrayList<Candies> present) {
         System.out.println("Конфеты с весом от 30 до 31 грамма:");
-        for (Candy candy : present) {
+        for (Candies candy : present) {
             if (candy.getWeight() >= 30 && candy.getWeight() <= 31) {
                 System.out.println("- " + candy.name);
             }

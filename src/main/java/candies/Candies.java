@@ -1,19 +1,12 @@
-package Candies;
+package candies;
 
-public class Candy {
+public class Candies {
     public String name;
     public String type;
     public int price;
     public int weight;
 
-    public Candy(){
-        name="Default";
-        type= "Default type";
-        price= 0;
-        weight=0;
-    }
-
-    public Candy(String name,String type,int price, int weight){
+    public Candies(String name,String type,int price, int weight){
         this.name=name;
         this.weight=weight;
         this.type=type;
@@ -35,5 +28,9 @@ public class Candy {
 
     public int getWeight() {
         return weight;
+    }
+
+    public String getType() {
+        return type;
     }
 }
