@@ -10,7 +10,13 @@ import java.util.Comparator;
 
 public class Run {
     public static void main(String[] args) {
-        {
+
+        new Run();
+        CreatePresent.CreatePresent();
+        CreatePresent.createBoxPresent();
+
+
+        /**{
             ArrayList<Candy> present = new ArrayList<>();
 
             ChocolateBars test0 = new ChocolateBars("Марс        ", "Шоколадный батончик",
@@ -61,6 +67,6 @@ public class Run {
                     System.out.println("- " + candy.name);
                 }
             }
-        }
+        }**/
     }
 }
