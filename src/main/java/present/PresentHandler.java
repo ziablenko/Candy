@@ -3,7 +3,7 @@ package present;
 import candies.Candies;
 import candies.ChocolateBar;
 import candies.Lollipops;
-import candies.Сookies;
+import candies.Cookies;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -24,25 +24,25 @@ public class PresentHandler implements Box {
     public static ArrayList<Candies> createPresent() {
         ArrayList<Candies> present = new ArrayList<>();
 
-        ChocolateBar test0 = new ChocolateBar("Марс        ", "Шоколадный батончик",
+        ChocolateBar candy0 = new ChocolateBar("Марс        ", "Шоколадный батончик",
                 25, 33);
-        ChocolateBar test1 = new ChocolateBar("Сникерс     ", "Шоколадный батончик",
+        ChocolateBar candy1 = new ChocolateBar("Сникерс     ", "Шоколадный батончик",
                 39, 40);
-        Lollipops test2 = new Lollipops("Хуба-буба   ", "Леденцы            ",
+        Lollipops candy2 = new Lollipops("Хуба-буба   ", "Леденцы            ",
                 24, 30);
-        Lollipops test3 = new Lollipops("Чупа-Чупс   ", "Леденцы            ",
+        Lollipops candy3 = new Lollipops("Чупа-Чупс   ", "Леденцы            ",
                 31, 31);
-        Сookies test4 = new Сookies("Орео        ", "печенье            ",
+        Cookies candy4 = new Cookies("Орео        ", "печенье            ",
                 14, 33);
-        Сookies test5 = new Сookies("Звезда      ", "печенье            ",
+        Cookies candy5 = new Cookies("Звезда      ", "печенье            ",
                 12, 29);
 
-        present.add(test0);
-        present.add(test1);
-        present.add(test2);
-        present.add(test3);
-        present.add(test4);
-        present.add(test5);
+        present.add(candy0);
+        present.add(candy1);
+        present.add(candy2);
+        present.add(candy3);
+        present.add(candy4);
+        present.add(candy5);
 
         System.out.println("Подарочный набор : ");
         System.out.println("| Наименование | Тип                 |Цена|Вес |");

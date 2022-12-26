@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="add basic class">
+    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/candies/Cookies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/candies/Candies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Candies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/candies/Сookies.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/present/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/Run.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672089677347</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="refactoring">
+      <created>1672090587275</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672090587275</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,7 +169,8 @@
     <MESSAGE value="updated" />
     <MESSAGE value="corrected comments from Anya from 1 to 15" />
     <MESSAGE value="add basic class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add basic class" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
