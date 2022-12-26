@@ -13,8 +13,7 @@ public abstract class Candies {
         this.price=price;
     };
 
-    public void show_all_info1(String name) {
-        this.name=name;
+    public void showAllInfo(String name) {
         System.out.println("| "+name+" | "+type+" | "+price+" | "+weight+" | ");
     }
 

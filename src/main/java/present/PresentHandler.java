@@ -49,11 +49,12 @@ public class PresentHandler implements Box {
         System.out.println("|--------------|---------------------|----|----|");
 
         for (Candies candy : present) {
-            candy.show_all_info1(candy.name);
+            candy.showAllInfo(candy.name);
         }
         return present;
     }
 
+    @Override
     public void sort(ArrayList<Candies> present) {
 
         present.sort(Comparator.comparing(Candies::getName)
@@ -63,7 +64,7 @@ public class PresentHandler implements Box {
         System.out.println("|--------------|---------------------|----|----|");
 
         for (Candies candy : present) {
-            candy.show_all_info1(candy.name);
+            candy.showAllInfo(candy.name);
         }
     }
 

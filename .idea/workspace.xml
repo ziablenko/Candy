@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="updated">
+    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="add basic class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Candies/Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Candies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Candies/ChocolateBars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/ChocolateBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Candies/LolliPops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Lollipops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Candies/Сookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Сookies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Present/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Present/CreatePresent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Present/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/candies/Candies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Candies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672068770946</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="corrected comments from Anya from 1 to 15">
+      <created>1672089520175</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672089520175</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add basic class">
+      <created>1672089677347</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672089677347</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -148,7 +157,9 @@
     <MESSAGE value="Changing variable names." />
     <MESSAGE value="Divided the classes into packages." />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="corrected comments from Anya from 1 to 15" />
+    <MESSAGE value="add basic class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add basic class" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
