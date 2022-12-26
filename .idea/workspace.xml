@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="Divided the classes into packages.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Present/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Present/Box.java" afterDir="false" />
+    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="updated">
       <change beforePath="$PROJECT_DIR$/src/main/java/Present/CreatePresent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Present/CreatePresent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Present/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Present/Run.java" afterDir="false" />
     </list>
@@ -121,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672067369877</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated">
+      <created>1672068411169</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672068411169</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,7 +134,8 @@
     <MESSAGE value="Deleting comment." />
     <MESSAGE value="Changing variable names." />
     <MESSAGE value="Divided the classes into packages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Divided the classes into packages." />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

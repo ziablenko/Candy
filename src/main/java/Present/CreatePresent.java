@@ -6,7 +6,6 @@ import Candies.LolliPops;
 import Candies.Сookies;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class CreatePresent implements Box {
