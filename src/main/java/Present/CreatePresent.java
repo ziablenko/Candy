@@ -14,14 +14,15 @@ public class CreatePresent implements Box {
     public static void createBoxPresent() {
 
         CreatePresent gift = new CreatePresent();
-        ArrayList<Candy> present = gift.CreatePresent();
-        gift.Sort(present);
-        gift.PresentPrice(present);
+        ArrayList<Candy> present = gift.createPresent();
+        gift.sort(present);
+        gift.presentPrice(present);
+        gift.presentWeight(present);
         gift.searchCandy(present);
 
     }
 
-    public static ArrayList<Candy> CreatePresent() {
+    public static ArrayList<Candy> createPresent() {
         ArrayList<Candy> present = new ArrayList<>();
 
         ChocolateBars test0 = new ChocolateBars("Марс        ", "Шоколадный батончик",
@@ -54,7 +55,7 @@ public class CreatePresent implements Box {
         return present;
     }
 
-    public void Sort(ArrayList<Candy> present) {
+    public void sort(ArrayList<Candy> present) {
 
         present.sort(Comparator.comparing(Candy::getName)
                 .thenComparing(Candy::getWeight));
@@ -65,14 +66,24 @@ public class CreatePresent implements Box {
         for (Candy candy : present) {
             candy.show_all_info1(candy.name);
         }
- }
+    }
 
-    public void PresentPrice(ArrayList<Candy> present) {
+    @Override
+    public void presentPrice(ArrayList<Candy> present) {
         int sum = 0;
-        for (Candy candy :present) {
+        for (Candy candy : present) {
             sum += candy.getPrice();
         }
         System.out.println("Цена подарка: " + sum);
+    }
+
+    @Override
+    public void presentWeight(ArrayList<Candy> present) {
+        int sum = 0;
+        for (Candy candy : present) {
+            sum += candy.getWeight();
+        }
+        System.out.println("Вес подарка: " + sum);
     }
 
     @Override
@@ -82,18 +93,6 @@ public class CreatePresent implements Box {
             if (candy.getWeight() >= 30 && candy.getWeight() <= 31) {
                 System.out.println("- " + candy.name);
             }
-    }
-
-    /**
-        int weight = 0;
-        for (Candy candy : present) {
-            weight += candy.getWeight();
         }
-        System.out.println("Вес подарка: " + weight);
- **/
-
- }
-
-
-
     }
+}

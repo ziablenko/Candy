@@ -6,10 +6,9 @@ import java.util.ArrayList;
 
 public interface Box {
 
- public void Sort(ArrayList<Candy> present);
-
- public void PresentPrice(ArrayList<Candy> present);
-
+ public void sort(ArrayList<Candy> present);
+ public void presentPrice(ArrayList<Candy> present);
+ public void presentWeight(ArrayList<Candy> present);
  public void searchCandy(ArrayList<Candy> present);
 
 }
