@@ -1,6 +1,6 @@
 package candies;
 
-public class Candies {
+public abstract class Candies {
     public String name;
     public String type;
     public int price;
