@@ -12,7 +12,6 @@ public class Run {
     public static void main(String[] args) {
 
         new Run();
-        CreatePresent.CreatePresent();
         CreatePresent.createBoxPresent();
 
 

@@ -16,6 +16,8 @@ public class CreatePresent implements Box {
         CreatePresent gift = new CreatePresent();
         ArrayList<Candy> present = gift.CreatePresent();
         gift.Sort(present);
+        gift.PresentPrice(present);
+        gift.searchCandy(present);
 
     }
 
@@ -73,21 +75,25 @@ public class CreatePresent implements Box {
         System.out.println("Цена подарка: " + sum);
     }
 
-/**
-        int weight = 0;
-        for (Candy candy : present) {
-            weight += candy.getWeight();
-        }
-        System.out.println("Вес подарка: " + weight);
-
+    @Override
+    public void searchCandy(ArrayList<Candy> present) {
         System.out.println("Конфеты с весом от 30 до 31 грамма:");
         for (Candy candy : present) {
             if (candy.getWeight() >= 30 && candy.getWeight() <= 31) {
                 System.out.println("- " + candy.name);
             }
-        }
+    }
 
-**/
+    /**
+        int weight = 0;
+        for (Candy candy : present) {
+            weight += candy.getWeight();
+        }
+        System.out.println("Вес подарка: " + weight);
+ **/
+
+ }
+
 
 
     }
