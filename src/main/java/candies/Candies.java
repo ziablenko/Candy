@@ -17,6 +17,22 @@ public abstract class Candies {
         System.out.println("| "+name+" | "+type+" | "+price+" | "+weight+" | ");
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
     public String getName() {
         return name;
     }

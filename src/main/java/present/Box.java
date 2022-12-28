@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public interface Box {
 
  void sort(ArrayList<Candies> present);
- void presentPrice(ArrayList<Candies> present);
- void presentWeight(ArrayList<Candies> present);
+ void priceBox(ArrayList<Candies> present);
+ void weightBox(ArrayList<Candies> present);
  void searchCandy(ArrayList<Candies> present);
 
 }

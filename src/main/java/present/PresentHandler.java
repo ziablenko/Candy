@@ -15,11 +15,11 @@ public class PresentHandler implements Box {
         PresentHandler gift = new PresentHandler();
         ArrayList<Candies> present = createPresentBox();
         gift.sort(present);
-        gift.presentPrice(present);
-        gift.presentWeight(present);
+        gift.priceBox(present);
+        gift.weightBox(present);
         gift.searchCandy(present);
-        gift.createCandies();
-        gift.getRandomCandy();
+        createCandies();
+        getRandomCandy();
 
     }
 
@@ -39,13 +39,13 @@ public class PresentHandler implements Box {
         candies[5] =new Lollipops("Витаминка   ", "Леденцы            ",
                                         14, 11);
         candies[6] =new Cookies("Орео        ", "печенье            ",
-                                29, 100);
+                                29, 100, "Шоколадное");
         candies[7] =new Cookies("Наполеон    ", "печенье            ",
-                                        26, 50);
+                                        26, 66, "Песочное");
         candies[8] =new Cookies("Грильяж     ", "печенье            ",
-                                        100, 30);
+                                        100, 30, "Имбирное");
         candies[9] =new Cookies("Тук         ", "печенье            ",
-                                        55, 200);
+                                        55, 200, "Слоенное");
 
         return candies;
     }
@@ -56,9 +56,11 @@ public class PresentHandler implements Box {
     }
 
     public static ArrayList<Candies> createPresentBox() {
+        int count=10;
+
         ArrayList<Candies> present = new ArrayList<>();
 
-        for (int i=0;i<5;i++) {
+        for (int i=0;i<count;i++) {
             present.add(getRandomCandy());
         }
         System.out.println("Подарочный набор : ");
@@ -72,10 +74,16 @@ public class PresentHandler implements Box {
     }
 
    public void sort(ArrayList<Candies> present) {
+       Param param = Param.NAME;
 
-        present.sort(Comparator.comparing(Candies::getName)
-                .thenComparing(Candies::getWeight));
-        System.out.println("Подарочный набор отсортирован: ");
+       switch (param) {
+           case NAME -> present.sort(Comparator.comparing(Candies::getName));
+           case WEIGHT -> present.sort(Comparator.comparing(Candies::getWeight));
+           case PRICE -> present.sort(Comparator.comparing(Candies::getPrice));
+           case TYPE -> present.sort(Comparator.comparing(Candies::getType));
+       }
+
+        System.out.println("Подарочный набор отсортирован:  (by "+ param+")");
         System.out.println("| Наименование | Тип                 |Цена|Вес |");
         System.out.println("|--------------|---------------------|----|----|");
 
@@ -85,7 +93,7 @@ public class PresentHandler implements Box {
     }
 
     @Override
-    public void presentPrice(ArrayList<Candies> present) {
+    public void priceBox(ArrayList<Candies> present) {
         int sum = 0;
         for (Candies candy : present) {
             sum += candy.getPrice();
@@ -94,7 +102,7 @@ public class PresentHandler implements Box {
     }
 
     @Override
-    public void presentWeight(ArrayList<Candies> present) {
+    public void weightBox(ArrayList<Candies> present) {
         int sum = 0;
         for (Candies candy : present) {
             sum += candy.getWeight();
@@ -104,11 +112,44 @@ public class PresentHandler implements Box {
 
     @Override
     public void searchCandy(ArrayList<Candies> present) {
-        System.out.println("Конфеты с весом от 30 до 31 грамма:");
-        for (Candies candy : present) {
-            if (candy.getWeight() >= 30 && candy.getWeight() <= 31) {
-                System.out.println("- " + candy.name);
+        Param param = Param.NAME;
+        String value="Орео        ";
+        int min = 10;
+        int max= 30;
+
+        System.out.println("Фильтр конфет ("+param+value+min+max+"):");
+
+        switch (param) {
+            case NAME -> {
+                for (Candies candy : present) {
+                    if (candy.getName().equals(value)) {
+                        System.out.println("- " + candy.name);
+                    }
+                }
             }
+            case WEIGHT -> {
+                for (Candies candy : present) {
+                    if (candy.getWeight() >= min && candy.getWeight() <= max) {
+                        System.out.println("- " + candy.name);
+                    }
+                }
+            }
+            case PRICE -> {
+                for (Candies candy : present) {
+                    if (candy.getPrice() >= min && candy.getPrice() <= max) {
+                        System.out.println("- " + candy.name);
+                    }
+                }
+            }
+            case TYPE -> {
+                for (Candies candy : present) {
+                    if (candy.getType().equals(value)) {
+                        System.out.println("- " + candy.name);
+                    }
+                }
+            }
+            default -> throw new IllegalStateException("Unexpected value: " + param);
         }
+
     }
 }
