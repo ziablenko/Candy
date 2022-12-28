@@ -10,43 +10,60 @@ import java.util.Comparator;
 
 public class PresentHandler implements Box {
 
-    public static void createBoxPresent() {
+    public static void run() {
 
         PresentHandler gift = new PresentHandler();
-        ArrayList<Candies> present = createPresent();
+        ArrayList<Candies> present = createPresentBox();
         gift.sort(present);
         gift.presentPrice(present);
         gift.presentWeight(present);
         gift.searchCandy(present);
+        gift.createCandies();
+        gift.getRandomCandy();
 
     }
 
-    public static ArrayList<Candies> createPresent() {
+    public static Candies[] createCandies(){
+        Candies [] candies = new Candies[10];
+
+        candies[0] = new ChocolateBar("Марс        ", "Шоколадный батончик",
+                                25, 33, "Орехи");
+        candies[1] =new ChocolateBar("Сникерс     ", "Шоколадный батончик",
+                                39, 40, "Нуга");
+        candies[2] =new ChocolateBar("Сникерс     ", "Шоколадный батончик",
+                                39, 40, "Нуга");
+        candies[3]=new Lollipops("Хуба-буба   ", "Леденцы            ",
+                                24, 30);
+        candies[4] =new Lollipops("Чупа-Чупс   ", "Леденцы            ",
+                                31, 31);
+        candies[5] =new Lollipops("Витаминка   ", "Леденцы            ",
+                                        14, 11);
+        candies[6] =new Cookies("Орео        ", "печенье            ",
+                                29, 100);
+        candies[7] =new Cookies("Наполеон    ", "печенье            ",
+                                        26, 50);
+        candies[8] =new Cookies("Грильяж     ", "печенье            ",
+                                        100, 30);
+        candies[9] =new Cookies("Тук         ", "печенье            ",
+                                        55, 200);
+
+        return candies;
+    }
+
+    public static Candies getRandomCandy() {
+        int random = (int)Math.floor(Math.random() * createCandies().length);
+        return createCandies()[random];
+    }
+
+    public static ArrayList<Candies> createPresentBox() {
         ArrayList<Candies> present = new ArrayList<>();
 
-        ChocolateBar candy0 = new ChocolateBar("Марс        ", "Шоколадный батончик",
-                25, 33);
-        ChocolateBar candy1 = new ChocolateBar("Сникерс     ", "Шоколадный батончик",
-                39, 40);
-        Lollipops candy2 = new Lollipops("Хуба-буба   ", "Леденцы            ",
-                24, 30);
-        Lollipops candy3 = new Lollipops("Чупа-Чупс   ", "Леденцы            ",
-                31, 31);
-        Cookies candy4 = new Cookies("Орео        ", "печенье            ",
-                14, 33);
-        Cookies candy5 = new Cookies("Звезда      ", "печенье            ",
-                12, 29);
-
-        present.add(candy0);
-        present.add(candy1);
-        present.add(candy2);
-        present.add(candy3);
-        present.add(candy4);
-        present.add(candy5);
-
+        for (int i=0;i<5;i++) {
+            present.add(getRandomCandy());
+        }
         System.out.println("Подарочный набор : ");
-        System.out.println("| Наименование | Тип                 |Цена|Вес |");
-        System.out.println("|--------------|---------------------|----|----|");
+        System.out.println("| Наименование | Тип                 |Цена |Вес |");
+        System.out.println("|--------------|---------------------|-----|----|");
 
         for (Candies candy : present) {
             candy.showAllInfo(candy.name);
@@ -54,8 +71,7 @@ public class PresentHandler implements Box {
         return present;
     }
 
-    @Override
-    public void sort(ArrayList<Candies> present) {
+   public void sort(ArrayList<Candies> present) {
 
         present.sort(Comparator.comparing(Candies::getName)
                 .thenComparing(Candies::getWeight));
