@@ -2,11 +2,12 @@ package present;
 
 import candies.Candies;
 import candies.ChocolateBar;
-import candies.Lollipops;
-import candies.Cookies;
+import candies.Lollipop;
+import candies.Cookie;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Scanner;
 
 public class PresentHandler implements Box {
 
@@ -32,19 +33,19 @@ public class PresentHandler implements Box {
                                 39, 40, "Нуга");
         candies[2] =new ChocolateBar("Сникерс     ", "Шоколадный батончик",
                                 39, 40, "Нуга");
-        candies[3]=new Lollipops("Хуба-буба   ", "Леденцы            ",
+        candies[3]=new Lollipop("Хуба-буба   ", "Леденцы            ",
                                 24, 30);
-        candies[4] =new Lollipops("Чупа-Чупс   ", "Леденцы            ",
+        candies[4] =new Lollipop("Чупа-Чупс   ", "Леденцы            ",
                                 31, 31);
-        candies[5] =new Lollipops("Витаминка   ", "Леденцы            ",
+        candies[5] =new Lollipop("Витаминка   ", "Леденцы            ",
                                         14, 11);
-        candies[6] =new Cookies("Орео        ", "печенье            ",
+        candies[6] =new Cookie("Орео        ", "печенье            ",
                                 29, 100, "Шоколадное");
-        candies[7] =new Cookies("Наполеон    ", "печенье            ",
+        candies[7] =new Cookie("Наполеон    ", "печенье            ",
                                         26, 66, "Песочное");
-        candies[8] =new Cookies("Грильяж     ", "печенье            ",
+        candies[8] =new Cookie("Грильяж     ", "печенье            ",
                                         100, 30, "Имбирное");
-        candies[9] =new Cookies("Тук         ", "печенье            ",
+        candies[9] =new Cookie("Тук         ", "печенье            ",
                                         55, 200, "Слоенное");
 
         return candies;
@@ -56,7 +57,10 @@ public class PresentHandler implements Box {
     }
 
     public static ArrayList<Candies> createPresentBox() {
-        int count=10;
+
+        Scanner countScaner = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Введите колличество конфет для генерации подарка:");
+        int count = countScaner.nextInt();
 
         ArrayList<Candies> present = new ArrayList<>();
 
@@ -74,18 +78,22 @@ public class PresentHandler implements Box {
     }
 
    public void sort(ArrayList<Candies> present) {
-       Param param = Param.NAME;
 
-       switch (param) {
-           case NAME -> present.sort(Comparator.comparing(Candies::getName));
-           case WEIGHT -> present.sort(Comparator.comparing(Candies::getWeight));
-           case PRICE -> present.sort(Comparator.comparing(Candies::getPrice));
-           case TYPE -> present.sort(Comparator.comparing(Candies::getType));
-       }
+       Scanner paramScaner = new Scanner(System.in);  // Create a Scanner object
+       System.out.println("Выберете параметр для сортировки конфет в подарке(NAME,WEIGHT,PRICE,TYPE)");
+       String a = paramScaner.nextLine();
+           Param param = Param.valueOf(a);
 
-        System.out.println("Подарочный набор отсортирован:  (by "+ param+")");
-        System.out.println("| Наименование | Тип                 |Цена|Вес |");
-        System.out.println("|--------------|---------------------|----|----|");
+           switch (param) {
+               case NAME -> present.sort(Comparator.comparing(Candies::getName));
+               case WEIGHT -> present.sort(Comparator.comparing(Candies::getWeight));
+               case PRICE -> present.sort(Comparator.comparing(Candies::getPrice));
+               case TYPE -> present.sort(Comparator.comparing(Candies::getType));
+           }
+
+           System.out.println("Подарочный набор отсортирован:  (by " + param + ")");
+           System.out.println("| Наименование | Тип                 |Цена|Вес |");
+           System.out.println("|--------------|---------------------|----|----|");
 
         for (Candies candy : present) {
             candy.showAllInfo(candy.name);
@@ -112,15 +120,18 @@ public class PresentHandler implements Box {
 
     @Override
     public void searchCandy(ArrayList<Candies> present) {
-        Param param = Param.NAME;
-        String value="Орео        ";
-        int min = 10;
-        int max= 30;
 
-        System.out.println("Фильтр конфет ("+param+value+min+max+"):");
+        Scanner paramScaner = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Выберете параметр для поиска конфет в подарке(NAME,WEIGHT,PRICE,TYPE)");
+        String parameter = paramScaner.nextLine();
+        Param param = Param.valueOf(parameter);
 
         switch (param) {
             case NAME -> {
+                Scanner valueScaner = new Scanner(System.in);
+                System.out.println("Введите значение для поля"+param);
+                String value = valueScaner.nextLine();
+                System.out.println("Результат поиска по " + param+" со значением "+value);
                 for (Candies candy : present) {
                     if (candy.getName().equals(value)) {
                         System.out.println("- " + candy.name);
@@ -128,6 +139,13 @@ public class PresentHandler implements Box {
                 }
             }
             case WEIGHT -> {
+                Scanner minScaner = new Scanner(System.in);
+                System.out.println("Введите минимальное значение для поиска по полю "+param);
+                int min = minScaner.nextInt();
+                Scanner maxScaner = new Scanner(System.in);
+                System.out.println("Введите максимальное значение для поиска по полю "+param);
+                int max = maxScaner.nextInt();
+                System.out.println("Результат поиска по " + param+" с диапазоном значений от "+min+" до "+max);
                 for (Candies candy : present) {
                     if (candy.getWeight() >= min && candy.getWeight() <= max) {
                         System.out.println("- " + candy.name);
@@ -135,6 +153,13 @@ public class PresentHandler implements Box {
                 }
             }
             case PRICE -> {
+                Scanner minScaner = new Scanner(System.in);
+                System.out.println("Введите минимальное значение для поиска по полю "+param);
+                int min = minScaner.nextInt();
+                Scanner maxScaner = new Scanner(System.in);
+                System.out.println("Введите максимальное значение для поиска по полю "+param);
+                int max = maxScaner.nextInt();
+                System.out.println("Результат поиска по " + param+" с диапазоном значений от "+min+" до "+max);
                 for (Candies candy : present) {
                     if (candy.getPrice() >= min && candy.getPrice() <= max) {
                         System.out.println("- " + candy.name);
@@ -142,6 +167,10 @@ public class PresentHandler implements Box {
                 }
             }
             case TYPE -> {
+                Scanner valueScaner = new Scanner(System.in);
+                System.out.println("Введите значение для поля"+param);
+                String value = valueScaner.nextLine();
+                System.out.println("Результат поиска по " + param+" со значением "+value);
                 for (Candies candy : present) {
                     if (candy.getType().equals(value)) {
                         System.out.println("- " + candy.name);
