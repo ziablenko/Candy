@@ -6,7 +6,7 @@ public class Cookie extends Candies {
 
     public Cookie(String name, String type, int price, int weight, String dough) {
         super(name, type, price, weight);
-        this.dough=dough;
+        this.dough = dough;
 
     }
 }

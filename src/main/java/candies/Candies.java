@@ -6,15 +6,15 @@ public abstract class Candies {
     public int price;
     public int weight;
 
-    public Candies(String name,String type,int price, int weight){
-        this.name=name;
-        this.weight=weight;
-        this.type=type;
-        this.price=price;
+    public Candies(String name, String type, int price, int weight) {
+        this.name = name;
+        this.weight = weight;
+        this.type = type;
+        this.price = price;
     }
 
     public void showAllInfo(String name) {
-        System.out.println("| "+name+" | "+type+" | "+price+" | "+weight+" | ");
+        System.out.println("| " + name + " | " + type + " | " + price + " | " + weight + " | ");
     }
 
     public void setName(String name) {
