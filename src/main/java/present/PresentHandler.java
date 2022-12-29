@@ -29,23 +29,23 @@ public class PresentHandler implements Box {
 
         candies[0] = new ChocolateBar("Марс        ", "Шоколадный батончик",
                                 25, 33, "Орехи");
-        candies[1] =new ChocolateBar("Сникерс     ", "Шоколадный батончик",
+        candies[1] = new ChocolateBar("Сникерс     ", "Шоколадный батончик",
                                 39, 40, "Нуга");
-        candies[2] =new ChocolateBar("Сникерс     ", "Шоколадный батончик",
+        candies[2] = new ChocolateBar("Сникерс     ", "Шоколадный батончик",
                                 39, 40, "Нуга");
-        candies[3]=new Lollipop("Хуба-буба   ", "Леденцы            ",
-                                24, 30);
-        candies[4] =new Lollipop("Чупа-Чупс   ", "Леденцы            ",
-                                31, 31);
-        candies[5] =new Lollipop("Витаминка   ", "Леденцы            ",
-                                        14, 11);
-        candies[6] =new Cookie("Орео        ", "печенье            ",
+        candies[3] = new Lollipop("Хуба-буба   ", "Леденцы            ",
+                                24, 30, "Малиновый");
+        candies[4] = new Lollipop("Чупа-Чупс   ", "Леденцы            ",
+                                31, 31, "Клубличный");
+        candies[5] = new Lollipop("Витаминка   ", "Леденцы            ",
+                                        14, 11, "Кока-кола");
+        candies[6] = new Cookie("Орео        ", "печенье            ",
                                 29, 100, "Шоколадное");
-        candies[7] =new Cookie("Наполеон    ", "печенье            ",
+        candies[7] = new Cookie("Наполеон    ", "печенье            ",
                                         26, 66, "Песочное");
-        candies[8] =new Cookie("Грильяж     ", "печенье            ",
+        candies[8] = new Cookie("Грильяж     ", "печенье            ",
                                         100, 30, "Имбирное");
-        candies[9] =new Cookie("Тук         ", "печенье            ",
+        candies[9] = new Cookie("Тук         ", "печенье            ",
                                         55, 200, "Слоенное");
 
         return candies;

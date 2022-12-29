@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="refactoring">
+    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="implement scanner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/candies/ChocolateBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/ChocolateBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/candies/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Cookie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/candies/Lollipops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Lollipop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/candies/Lollipop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Lollipop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/present/Param.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/Param.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672238765352</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="implement scanner">
+      <created>1672326071646</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1672326071646</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +242,8 @@
     <MESSAGE value="corrected comments from Anya from 1 to 15" />
     <MESSAGE value="add basic class" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="implement scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement scanner" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
