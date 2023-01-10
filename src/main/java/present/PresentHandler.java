@@ -230,7 +230,6 @@ public class PresentHandler implements Box {
                         System.out.println("No result");
                     }
                 }
-                default -> throw new IllegalStateException("Unexpected value: " + param);
             }
 
         } catch (IllegalArgumentException a) {
