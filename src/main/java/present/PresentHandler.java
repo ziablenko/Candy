@@ -177,7 +177,8 @@ public class PresentHandler implements Box {
                             System.out.println("Incorrect value for min/max(0-1000)");
                         }
                     }
-                    System.out.println("Search result for " + param + " with a range of values from " + min + " to " + max);
+                    System.out.println("Search result for " + param + " with a range of values from "
+                            + min + " to " + max);
 
                     for (Candies candy : present) {
                         if (candy.getWeight() >= min && candy.getWeight() <= max) {
@@ -203,7 +204,8 @@ public class PresentHandler implements Box {
                             System.out.println("Incorrect value for min/max(0-1000)");
                         }
                     }
-                    System.out.println("Search result for " + param + " with a range of values from " + min + " to " + max);
+                    System.out.println("Search result for " + param + " with a range of values from "
+                            + min + " to " + max);
 
                     for (Candies candy : present) {
                         if (candy.getPrice() >= min && candy.getPrice() <= max) {
