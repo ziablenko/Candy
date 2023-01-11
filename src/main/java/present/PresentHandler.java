@@ -13,6 +13,7 @@ import java.util.Scanner;
 
 public class PresentHandler implements Box {
 
+
     public static void run() {
         boolean created = false;
 
@@ -91,6 +92,36 @@ public class PresentHandler implements Box {
         }
         return present;
     }
+
+    public static boolean createPresentBox1(int count) {
+        ArrayList<Candies> present;
+        boolean created;
+        if (count >= 1 && count <= 10) {
+            created = true;
+            present = new ArrayList<>();
+
+            for (int i = 0; i < count; i++) {
+                present.add(getRandomCandy());
+            }
+            System.out.println("Gift: ");
+            System.out.println("| NAME                     | TYPE                |PRICE|WEIGHT |");
+            System.out.println("|--------------------------|---------------------|-----|-------|");
+
+            for (Candies candy : present) {
+                candy.showAllInfo(candy.name);
+            }
+        } else {
+            try {
+                throw new IOException();
+            } catch (IOException a) {
+                created=false;
+                System.out.println("You entered an invalid value. Valid values are from 1 to 10.");
+            }
+        }
+
+        return created;
+    }
+
 
     public void sort(ArrayList<Candies> present) {
 

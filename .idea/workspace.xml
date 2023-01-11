@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="review">
+    <list default="true" id="cc72b2ce-cf54-4354-897f-2e6bae60d6df" name="Changes" comment="Create new method createPresentBox1.&#10;Add TestNG framework.&#10;Create 3 tests for new method.  &#10;Create TestNG.xml file to compile my tests.">
+      <change afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unit_tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unit_tests/PriorityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/candies/ChocolateBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/ChocolateBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/candies/Cookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Cookie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/candies/Lollipop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/candies/Lollipop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/PresentHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/present/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/present/Run.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,21 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/anna.ziablenko/git autotest/Stryker.Lifenet.WebElement.Care.Conference.TestAutomation&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Markdown&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/anna.ziablenko/git autotest/Stryker.Lifenet.WebElement.Care.Conference.TestAutomation",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Settings.Markdown"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/anna.ziablenko/IdeaProjects/com.anna_ziablenko.java.lesson2.task2/TestNG.xml">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="present.Run" />
       <module name="com.anna_ziablenko.java.lesson2.task2" />
@@ -71,9 +77,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/anna.ziablenko/IdeaProjects/com.anna_ziablenko.java.lesson2.task2/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.anna_ziablenko.java.lesson2.task2" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.anna_ziablenko.java.lesson2.task2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit_tests" />
+      <option name="MAIN_CLASS_NAME" value="unit_tests.FirstTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriorityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.anna_ziablenko.java.lesson2.task2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit_tests" />
+      <option name="MAIN_CLASS_NAME" value="unit_tests.PriorityTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriorityTest.checkCreate" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.anna_ziablenko.java.lesson2.task2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit_tests" />
+      <option name="MAIN_CLASS_NAME" value="unit_tests.PriorityTest" />
+      <option name="METHOD_NAME" value="checkCreate" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/anna.ziablenko/IdeaProjects/com.anna_ziablenko.java.lesson2.task2/TestNG.xml" />
+        <item itemvalue="TestNG.PriorityTest" />
         <item itemvalue="Application.Run" />
+        <item itemvalue="TestNG.PriorityTest.checkCreate" />
+        <item itemvalue="TestNG.FirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673344583994</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="review">
+      <created>1673347394081</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673347394081</updated>
+    </task>
+    <task id="LOCAL-00026" summary="review">
+      <created>1673348062739</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673348062739</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,7 +366,8 @@
     <MESSAGE value="implement scanner" />
     <MESSAGE value="add Exception" />
     <MESSAGE value="review" />
-    <option name="LAST_COMMIT_MESSAGE" value="review" />
+    <MESSAGE value="Create new method createPresentBox1.&#10;Add TestNG framework.&#10;Create 3 tests for new method.  &#10;Create TestNG.xml file to compile my tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new method createPresentBox1.&#10;Add TestNG framework.&#10;Create 3 tests for new method.  &#10;Create TestNG.xml file to compile my tests." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
